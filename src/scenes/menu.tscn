@@ -1,0 +1,77 @@
+[gd_scene load_steps=5 format=3 uid="uid://bs33wd2nt5ukm"]
+
+[ext_resource type="Theme" uid="uid://b62i3cqapdoxj" path="res://resources/theme/default_theme.tres" id="1_72usv"]
+[ext_resource type="Shader" path="res://resources/shader/simple_menu_transition.gdshader" id="1_q814m"]
+[ext_resource type="Script" path="res://src/scenes/menu.gd" id="3_yubbr"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vo1dh"]
+shader = ExtResource("1_q814m")
+shader_parameter/transition_progress = 1.0
+
+[node name="Menu" type="Control"]
+material = SubResource("ShaderMaterial_vo1dh")
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_72usv")
+script = ExtResource("3_yubbr")
+
+[node name="Margin" type="MarginContainer" parent="."]
+use_parent_material = true
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = -16.0
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sections" type="VBoxContainer" parent="Margin"]
+use_parent_material = true
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Title" type="Label" parent="Margin/Sections"]
+use_parent_material = true
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_colors/font_color = Color(0.513726, 0.466667, 0.819608, 1)
+theme_override_font_sizes/font_size = 20
+text = "AMAZING
+GAME TITLE!"
+vertical_alignment = 1
+
+[node name="Buttons" type="VBoxContainer" parent="Margin/Sections"]
+use_parent_material = true
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="PlayButton" type="Button" parent="Margin/Sections/Buttons"]
+use_parent_material = true
+layout_mode = 2
+size_flags_horizontal = 0
+focus_mode = 0
+theme_override_font_sizes/font_size = 12
+text = "PLAY"
+
+[node name="OptionsButton" type="Button" parent="Margin/Sections/Buttons"]
+use_parent_material = true
+layout_mode = 2
+size_flags_horizontal = 0
+focus_mode = 0
+theme_override_font_sizes/font_size = 12
+text = "OPTIONS"
+
+[node name="QuitButton" type="Button" parent="Margin/Sections/Buttons"]
+use_parent_material = true
+layout_mode = 2
+size_flags_horizontal = 0
+focus_mode = 0
+theme_override_font_sizes/font_size = 12
+text = "QUIT"

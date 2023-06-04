@@ -1,0 +1,26 @@
+[gd_resource type="Theme" load_steps=7 format=3 uid="uid://b62i3cqapdoxj"]
+
+[ext_resource type="FontFile" uid="uid://8iog8pum1eej" path="res://resources/font/kaph_regular.ttf" id="1_6d3c2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_618tc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4cidt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cybkt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lvtrv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ws3yu"]
+
+[resource]
+default_font = ExtResource("1_6d3c2")
+Button/colors/font_color = Color(1, 1, 1, 1)
+Button/colors/font_focus_color = Color(0.298039, 0.72549, 0.266667, 1)
+Button/colors/font_hover_color = Color(0.298039, 0.72549, 0.266667, 1)
+Button/colors/font_hover_pressed_color = Color(0.192157, 0.466667, 0.172549, 1)
+Button/colors/font_pressed_color = Color(0.192157, 0.466667, 0.172549, 1)
+Button/styles/disabled = SubResource("StyleBoxEmpty_618tc")
+Button/styles/focus = SubResource("StyleBoxEmpty_4cidt")
+Button/styles/hover = SubResource("StyleBoxEmpty_cybkt")
+Button/styles/normal = SubResource("StyleBoxEmpty_lvtrv")
+Button/styles/pressed = SubResource("StyleBoxEmpty_ws3yu")
