@@ -1,4 +1,4 @@
-# godot-simple-menu-transition
+# Godot Simple Menu Transition
 This is a demo project for the Godot Engine that includes simple GDScript and shader code to create a menu transition effect.
 
 *This project is compatible with Godot 4.0.2 version, but the same implementation should work on Godot 3 LTS version too.*
